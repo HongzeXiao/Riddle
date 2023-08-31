@@ -1,0 +1,60 @@
+:root {
+    --card-height: 65vh;
+    --card-width: 90vh;
+  }
+  
+
+body{
+    min-height: 100vh;
+    background:#2DBEFA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.ques{
+    background: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 10px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    font-family: "Gloria Hallelujah", cursive;
+}
+
+
+h1{
+    color: #4B0FE5;
+}
+
+p{
+    color:#5605FC;
+}
+.answer{
+    color: rgb(88 199 250 / 0%);
+    background-color: #180058;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.answer:hover{
+    color: rgb(88 199 250 / 100%);
+    transition: color 1s;
+}
+.answer:hover:before,
+.answer:hover:after {
+  animation: none;
+  opacity: 0;
+}
